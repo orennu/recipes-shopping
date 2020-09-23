@@ -1,6 +1,17 @@
 .m-2 {
-    margin: 0.25em;
+    margin: 0.25em !important;
 }
+
+.m-6 {
+    margin: 1.25em !important;
+}
+
 .mb-2 {
-    margin-bottom: 0.25em;
+    margin-bottom: 0.5em !important;
+}
+
+.font-italic {
+    font-size: 1.75rem;
+    font-family: "Times New Roman", Times, serif;
+    font-style: oblique 10deg;
 }

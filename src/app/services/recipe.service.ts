@@ -1,4 +1,5 @@
 import { EventEmitter } from '@angular/core';
+import { Ingredient } from '../models/ingredient.model';
 import { Recipe } from '../models/recipe.model';
 
 export class RecipeService {
@@ -7,14 +8,32 @@ export class RecipeService {
 
     private recipes: Recipe[] = [
         new Recipe(
-            'A Test recipe 1', 
-            'This is simply a test for recipe 1', 
-            'https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/9/26/0/FNK_Tuscan-Chicken-Skillet_H2_s4x3.jpg.rend.hgtvcom.616.462.suffix/1537973085542.jpeg'
+            'Chicken Burger', 
+            'Home made chicken burger. Ant Jamaima style', 
+            'https://hips.hearstapps.com/hmg-prod/images/190416-chicken-burger-082-1556204252.jpg',
+            [
+                new Ingredient('Chicken Breast', 1),
+                new Ingredient('Tomatoes', 1),
+                new Ingredient('Pickle', 1),
+                new Ingredient('Lettuce', 1),
+                new Ingredient('Burger Bun', 1),
+                new Ingredient('Mayonnaise', 1)
+            ]
             ),
         new Recipe(
-            'A Test recipe 2', 
-            'This is simply a test for recipe 2', 
-            'https://joyfoodsunshine.com/wp-content/uploads/2016/09/easy-pizza-casserole-recipe-4-500x500.jpg'
+            'Beef Burger', 
+            'Home made beef burger. simple and yummi', 
+            'https://www.burger-il.com/wp-content/uploads/2017/11/meat-date-burger-1.jpg',
+            [
+                new Ingredient('Beef', 1),
+                new Ingredient('Tomatoes', 1),
+                new Ingredient('Pickle', 1),
+                new Ingredient('Lettuce', 1),
+                new Ingredient('Burger Bun', 1),
+                new Ingredient('Mayonnaise', 1),
+                new Ingredient('BBQ Sauce', 1),
+                new Ingredient('Cheddar Cheese', 1)
+            ]
             )
       ];
 

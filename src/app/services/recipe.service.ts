@@ -36,7 +36,23 @@ export class RecipeService {
                 new Ingredient('BBQ Sauce', 1),
                 new Ingredient('Cheddar Cheese', 1)
             ]
-            )
+            ),
+        new Recipe(
+            'Spicy Sushi',
+            'Home made sushi. delicious and healthy',
+            'https://prod-wolt-venue-images-cdn.wolt.com/5b4f30ed505452000be9d978/0d24ca6ee49c396afbdd4a6a0f4e5906',
+            [
+                new Ingredient('Cucumbers', 2),
+                new Ingredient('Carrot', 1),
+                new Ingredient('Avocado', 2),
+                new Ingredient('Salmon', 1),
+                new Ingredient('Tuna', 1),
+                new Ingredient('Rice', 1),
+                new Ingredient('Seaweed', 5),
+                new Ingredient('Soy Sauce', 3),
+                new Ingredient('Tariyaki Sauce', 3)
+            ]
+        )
       ];
 
     constructor(private shoppingListService: ShoppingListService) { }

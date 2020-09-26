@@ -24,4 +24,8 @@ export class ShoppingEditComponent implements OnInit {
     this.shoppingListService.addIngredient(newIngredient);
   }
 
+  onClearIngredients() {
+    this.shoppingListService.clearIngredients();
+  }
+
 }

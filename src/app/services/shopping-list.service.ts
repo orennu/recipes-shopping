@@ -39,14 +39,19 @@ export class ShoppingListService {
         this.ingredientsChanged.emit(this.ingredients.slice());
     }
 
-    isIngredientExists(ingredient: Ingredient) {
+    clearIngredients() {
+        this.ingredients = [];
+        this.ingredientsChanged.emit(this.ingredients.slice());
+    }
+
+    private isIngredientExists(ingredient: Ingredient) {
         return this.ingredients.filter(
-            ingredientElement => ingredientElement.name === ingredient.name)
+            ingredientElement => ingredientElement.name.toLowerCase() === ingredient.name.toLowerCase())
             .length > 0 ? true : false;
     }
 
-    incrementIngredientAmount(ingredient: Ingredient) {
-        this.ingredients.find(item => item.name === ingredient.name).amount += ingredient.amount;
+    private incrementIngredientAmount(ingredient: Ingredient) {
+        this.ingredients.find(item => item.name.toLowerCase() === ingredient.name.toLowerCase()).amount += ingredient.amount;
     }
 
 }

@@ -11,10 +11,18 @@
             </button>
             <ul class="dropdown-menu mt-o">
                 <li>
-                    <a (click)="onAddToShoppingList()" style="cursor: pointer;">Add to Shopping List</a>
+                    <a 
+                        (click)="onAddToShoppingList()" 
+                        style="cursor: pointer;">
+                        Add to Shopping List
+                    </a>
                 </li>
                 <li>
-                    <a style="cursor: pointer;">Edit Recipe</a>
+                    <a 
+                        style="cursor: pointer;"
+                        (click)="onEditRecipe()">
+                        Edit Recipe
+                    </a>
                 </li>
                 <li>
                     <a style="cursor: pointer;">Delete Recipe</a>
